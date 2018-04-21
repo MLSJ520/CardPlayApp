@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context="com.example.lenovo.myapplication.MainActivity">
+
+    <ProgressBar
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        style="?android:progressBarStyleHorizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/login_progressBar" />
+    <TextView
+        android:id="@+id/text_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/login_progressBar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:text="加载中.."/>
+
+
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="注册"
+        android:textSize="20sp"
+        android:background="@drawable/button_style"
+        android:layout_above="@+id/login_progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="登录"
+        android:textSize="20sp"
+        android:background="@drawable/button_style"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/btn_register"
+        android:layout_marginBottom="20dp"
+        />
+</RelativeLayout>
